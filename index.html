@@ -28,7 +28,8 @@
                     colors: {
                         'title-black': '#131318',
                         'btn-pink': '#FF4240',
-                        'p-text': '#FFFFFF99',
+                        'pa-text': '#FFFFFF99',
+                        'p-text': '#13131899',
                     }
                 }
             }
@@ -87,7 +88,8 @@
                 <!-- slider 1 -->
                 <div id="slide1"
                     class="carousel-item lg:h-[550px] relative w-full bg-[url(./images/1.png)] bg-center bg-cover rounded-lg">
-                    <div class="absolute flex justify-between transform bottom-16 left-40 lg:-translate-y-1/2 lg:left-5 lg:left-10 lg:bottom-1">
+                    <div
+                        class="absolute flex justify-between transform bottom-16 left-40 lg:-translate-y-1/2 lg:left-5 lg:left-10 lg:bottom-1">
                         <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
                         <a href="#slide2" class="btn btn-circle  bg-black text-white">❯</a>
                     </div>
@@ -95,7 +97,8 @@
                 <!-- slider 2  -->
                 <div id="slide2"
                     class="carousel-item h-[550px] relative w-full bg-[url(./images/2.png)] bg-center bg-cover rounded-lg">
-                    <div class="absolute flex justify-between transform bottom-16 left-40 lg:-translate-y-1/2 lg:left-5 lg:left-10 lg:bottom-1">
+                    <div
+                        class="absolute flex justify-between transform bottom-16 left-40 lg:-translate-y-1/2 lg:left-5 lg:left-10 lg:bottom-1">
                         <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
                         <a href="#slide3" class="btn btn-circle  bg-black text-white">❯</a>
                     </div>
@@ -103,7 +106,8 @@
                 <!-- slider 3 -->
                 <div id="slide3"
                     class="carousel-item h-[550px] relative w-full bg-[url(./images/3.png)] bg-center bg-cover rounded-lg">
-                    <div class="absolute flex justify-between transform bottom-16 left-40 lg:-translate-y-1/2 lg:left-5 lg:left-10 lg:bottom-1">
+                    <div
+                        class="absolute flex justify-between transform bottom-16 left-40 lg:-translate-y-1/2 lg:left-5 lg:left-10 lg:bottom-1">
                         <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a>
                         <a href="#slide4" class="btn btn-circle  bg-black text-white">❯</a>
                     </div>
@@ -111,22 +115,78 @@
                 <!-- slider 4 -->
                 <div id="slide4"
                     class="carousel-item h-[550px] relative w-full bg-[url(./images/4.png)] bg-cover bg-center rounded-lg">
-                    <div class="absolute flex justify-between transform bottom-16 left-40 lg:-translate-y-1/2 lg:left-5 lg:left-10 lg:bottom-1">
+                    <div
+                        class="absolute flex justify-between transform bottom-16 left-40 lg:-translate-y-1/2 lg:left-5 lg:left-10 lg:bottom-1">
                         <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a>
                         <a href="#slide1" class="btn btn-circle  bg-black text-white">❯</a>
                     </div>
                 </div>
             </div>
             <div class="lg:absolute bg-title-black p-8 bottom-8 right-8 rounded-lg">
-                <h2 class="mb-4 text-2xl font-extrabold text-white">Meet all the heroes from the field</h2>
-                <p class="font-medium text-p-text">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>
-                     turpis placerat dolor. Purus urna in
+                <h2 class="mb-4 text-[18px] lg:text-2xl font-extrabold text-white">Meet all the heroes from the field</h2>
+                <p class="text-[14px] font-medium text-pa-text">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>
+                    turpis placerat dolor. Purus urna in
                     sit nullam proin. </p>
             </div>
         </div>
     </header>
     <main>
-        
+        <!-- Radial Progress -->
+        <div class="mt-12 lg:mt-32">
+            <div class="text-center">
+                <h2 class="mb-6 text-title-black text-[22px] lg:text-4xl font-extrabold">Professional Hockeys Club</h2>
+                <p class="mb-20 text-p-text font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                    turpis
+                    placerat dolor. Purus urna in sit
+                    nullam proin. </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-4">
+                <div class="flex flex-col mb-6 space-y-4 items-center">
+                    <div class="mb-4 lg:mb-6 radial-progress text-btn-pink" style="--value:87;" role="progressbar">87%</div>
+                    <h2 class="text-xl font-semibold text-title-black">Prayer Facility</h2>
+                    <p class="text-p-text text-center">Amet consectetur. Condimentum <br>
+                        dignissim adipiscing .</p>
+                </div>
+                <div class="flex flex-col mb-6 space-y-4 items-center">
+                    <div class="mb-4 lg:mb-6 radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                    <h2 class="text-xl font-semibold text-title-black">Experienced Coach</h2>
+                    <p class="text-p-text text-center ">Amet consectetur. Condimentum <br>
+                        dignissim adipiscing .</p>
+                </div>
+                <div class="flex flex-col mb-6 space-y-4 items-center">
+                    <div class="mb-4 lg:mb-6 radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+                    <h2 class="text-xl font-semibold text-title-black">Senior Player</h2>
+                    <p class="text-p-text text-center">Amet consectetur. Condimentum <br>
+                        dignissim adipiscing .</p>
+                </div>
+                <div class="flex flex-col mb-6 space-y-4 items-center">
+                    <div class="mb-4 lg:mb-6 radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+                    <h2 class="text-xl font-semibold text-title-black">Training Ground</h2>
+                    <p class="text-p-text text-center ">Amet consectetur. Condimentum <br>
+                        dignissim adipiscing .</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Program Sections -->
+        <div class="mt-32">
+            <div class="text-center ">
+                <h2 class="mb-6 text-title-black font-extrabold text-4xl">Program Sections</h2>
+                <p class="text-p-text">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                    dolor.
+                    Purus urna in sit
+                    nullam proin. </p>
+            </div>
+            <div>
+                <div>
+                    <h2>Junior Program</h2>
+                    <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
+                        sed et in.</p>
+                    <button>Register Now!</button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 
