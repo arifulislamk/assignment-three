@@ -8,26 +8,125 @@
     <!-- tailwind and daisy UI link add  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font familiy frome google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- font awosame added link  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- customs color with tailwind  -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'title-black': '#131318',
+                        'btn-pink': '#FF4240',
+                        'p-text': '#FFFFFF99',
                     }
                 }
             }
         }
     </script>
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    <header>
-        hello ariful
+<body class="font-manrope mx-5 lg:mx-28">
+    <header class="mt-6 md:mt-8 lg:mt-12">
+        <!-- navbar part  -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="text-btn-pink"><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-title-black">Hockey’s</h2>
+                </div>
+                <div class="navbar-center lg:gap-36 hidden md:flex lg:flex ">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-btn-pink"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <i class="fa-solid fa-magnifying-glass mr-6 hidden lg:flex md:flex"></i>
+                    <a class="px-6 btn bg-btn-pink text-white text-xl font-bold">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- bannner part  -->
+        <div class="mt-7 md:mt-9 lg:mt-14 relative">
+            <div class="carousel w-full">
+                <!-- slider 1 -->
+                <div id="slide1"
+                    class="carousel-item lg:h-[550px] relative w-full bg-[url(./images/1.png)] bg-center bg-cover rounded-lg">
+                    <div class="absolute flex justify-between transform bottom-16 left-40 lg:-translate-y-1/2 lg:left-5 lg:left-10 lg:bottom-1">
+                        <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle  bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <!-- slider 2  -->
+                <div id="slide2"
+                    class="carousel-item h-[550px] relative w-full bg-[url(./images/2.png)] bg-center bg-cover rounded-lg">
+                    <div class="absolute flex justify-between transform bottom-16 left-40 lg:-translate-y-1/2 lg:left-5 lg:left-10 lg:bottom-1">
+                        <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide3" class="btn btn-circle  bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <!-- slider 3 -->
+                <div id="slide3"
+                    class="carousel-item h-[550px] relative w-full bg-[url(./images/3.png)] bg-center bg-cover rounded-lg">
+                    <div class="absolute flex justify-between transform bottom-16 left-40 lg:-translate-y-1/2 lg:left-5 lg:left-10 lg:bottom-1">
+                        <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide4" class="btn btn-circle  bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <!-- slider 4 -->
+                <div id="slide4"
+                    class="carousel-item h-[550px] relative w-full bg-[url(./images/4.png)] bg-cover bg-center rounded-lg">
+                    <div class="absolute flex justify-between transform bottom-16 left-40 lg:-translate-y-1/2 lg:left-5 lg:left-10 lg:bottom-1">
+                        <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide1" class="btn btn-circle  bg-black text-white">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:absolute bg-title-black p-8 bottom-8 right-8 rounded-lg">
+                <h2 class="mb-4 text-2xl font-extrabold text-white">Meet all the heroes from the field</h2>
+                <p class="font-medium text-p-text">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>
+                     turpis placerat dolor. Purus urna in
+                    sit nullam proin. </p>
+            </div>
+        </div>
     </header>
     <main>
-
+        
     </main>
     <footer>
 
